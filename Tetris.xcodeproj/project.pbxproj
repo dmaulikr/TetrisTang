@@ -203,7 +203,7 @@
 		ADCEB8241C4D1B2700FF9C3A /* LICENSE_Chipmunk.txt in Resources */ = {isa = PBXBuildFile; fileRef = ADCEB8231C4D1B2700FF9C3A /* LICENSE_Chipmunk.txt */; };
 		ADCEB8281C4D1B2700FF9C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCEB8271C4D1B2700FF9C3A /* main.m */; };
 		ADCEB82C1C4D1B2700FF9C3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCEB82B1C4D1B2700FF9C3A /* AppDelegate.m */; };
-		ADCEB82F1C4D1B2700FF9C3A /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCEB82E1C4D1B2700FF9C3A /* HelloWorldScene.m */; };
+		ADCEB82F1C4D1B2700FF9C3A /* TetrisTang.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCEB82E1C4D1B2700FF9C3A /* TetrisTang.m */; };
 		ADCEB8311C4D1B2700FF9C3A /* white_square.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCEB8301C4D1B2700FF9C3A /* white_square.png */; };
 /* End PBXBuildFile section */
 
@@ -660,9 +660,9 @@
 		ADCEB8261C4D1B2700FF9C3A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = "Supporting Files/Prefix.pch"; sourceTree = "<group>"; };
 		ADCEB8271C4D1B2700FF9C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		ADCEB82A1C4D1B2700FF9C3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
-		ADCEB82B1C4D1B2700FF9C3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		ADCEB82D1C4D1B2700FF9C3A /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		ADCEB82E1C4D1B2700FF9C3A /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
+		ADCEB82B1C4D1B2700FF9C3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ADCEB82D1C4D1B2700FF9C3A /* TetrisTang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TetrisTang.h; path = Classes/TetrisTang.h; sourceTree = "<group>"; };
+		ADCEB82E1C4D1B2700FF9C3A /* TetrisTang.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TetrisTang.m; path = Classes/TetrisTang.m; sourceTree = "<group>"; };
 		ADCEB8301C4D1B2700FF9C3A /* white_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_square.png; path = Resources/white_square.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1542,8 +1542,8 @@
 			children = (
 				ADCEB82A1C4D1B2700FF9C3A /* AppDelegate.h */,
 				ADCEB82B1C4D1B2700FF9C3A /* AppDelegate.m */,
-				ADCEB82D1C4D1B2700FF9C3A /* HelloWorldScene.h */,
-				ADCEB82E1C4D1B2700FF9C3A /* HelloWorldScene.m */,
+				ADCEB82D1C4D1B2700FF9C3A /* TetrisTang.h */,
+				ADCEB82E1C4D1B2700FF9C3A /* TetrisTang.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1683,7 +1683,7 @@
 				ADCEB6C61C4D1B2600FF9C3A /* CCEffectNode.m in Sources */,
 				ADCEB6C31C4D1B2600FF9C3A /* CCEffectPixellate.m in Sources */,
 				ADCEB5EA1C4D1B2500FF9C3A /* CCClippingNode.m in Sources */,
-				ADCEB82F1C4D1B2700FF9C3A /* HelloWorldScene.m in Sources */,
+				ADCEB82F1C4D1B2700FF9C3A /* TetrisTang.m in Sources */,
 				ADCEB7431C4D1B2600FF9C3A /* CCAnimationManager.m in Sources */,
 				ADCEB6C91C4D1B2600FF9C3A /* CCEffectStack.m in Sources */,
 				ADCEB67D1C4D1B2500FF9C3A /* cocos2d.m in Sources */,
@@ -1998,6 +1998,7 @@
 				ADCEB8361C4D1B2700FF9C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADCEB8371C4D1B2700FF9C3A /* Build configuration list for PBXNativeTarget "ObjectiveChipmunk" */ = {
 			isa = XCConfigurationList;
@@ -2006,6 +2007,7 @@
 				ADCEB8391C4D1B2700FF9C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

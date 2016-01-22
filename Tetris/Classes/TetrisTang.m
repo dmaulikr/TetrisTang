@@ -10,7 +10,8 @@
 //
 // -----------------------------------------------------------------
 
-#import "HelloWorldScene.h"
+
+#import "TetrisTang.h"
 
 // -----------------------------------------------------------------------
 
@@ -20,6 +21,7 @@
 
 - (id)init
 {
+    int testInt = 23;
     // Apple recommend assigning self with supers return value
     self = [super init];
     
