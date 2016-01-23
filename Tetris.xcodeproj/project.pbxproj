@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD76CEA51C53049E0061D74B /* TetrisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD76CEA41C53049E0061D74B /* TetrisTests.m */; };
+		AD76CEAE1C53059E0061D74B /* LogicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD76CEAD1C53059E0061D74B /* LogicTest.m */; };
 		ADCEB5771C4D1B2400FF9C3A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCEB5761C4D1B2400FF9C3A /* Default.png */; };
 		ADCEB5791C4D1B2400FF9C3A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCEB5781C4D1B2400FF9C3A /* Default@2x.png */; };
 		ADCEB57B1C4D1B2400FF9C3A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCEB57A1C4D1B2400FF9C3A /* Default-568h@2x.png */; };
@@ -207,7 +209,21 @@
 		ADCEB8311C4D1B2700FF9C3A /* white_square.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCEB8301C4D1B2700FF9C3A /* white_square.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AD76CEA71C53049E0061D74B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADCEB5671C4D1B2400FF9C3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADCEB56E1C4D1B2400FF9C3A;
+			remoteInfo = Tetris;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AD76CEA21C53049D0061D74B /* TetrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD76CEA41C53049E0061D74B /* TetrisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TetrisTests.m; sourceTree = "<group>"; };
+		AD76CEA61C53049E0061D74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD76CEAD1C53059E0061D74B /* LogicTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogicTest.m; sourceTree = "<group>"; };
 		ADCEB56F1C4D1B2400FF9C3A /* Tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCEB5731C4D1B2400FF9C3A /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveChipmunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCEB5761C4D1B2400FF9C3A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
@@ -667,6 +683,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD76CE9F1C53049D0061D74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADCEB56C1C4D1B2400FF9C3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -678,10 +701,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD76CEA31C53049E0061D74B /* TetrisTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD76CEA41C53049E0061D74B /* TetrisTests.m */,
+				AD76CEA61C53049E0061D74B /* Info.plist */,
+				AD76CEAD1C53059E0061D74B /* LogicTest.m */,
+			);
+			path = TetrisTests;
+			sourceTree = "<group>";
+		};
 		ADCEB5661C4D1B2400FF9C3A = {
 			isa = PBXGroup;
 			children = (
 				ADCEB5741C4D1B2400FF9C3A /* Tetris */,
+				AD76CEA31C53049E0061D74B /* TetrisTests */,
 				ADCEB5701C4D1B2400FF9C3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -691,6 +725,7 @@
 			children = (
 				ADCEB56F1C4D1B2400FF9C3A /* Tetris.app */,
 				ADCEB5731C4D1B2400FF9C3A /* libObjectiveChipmunk.a */,
+				AD76CEA21C53049D0061D74B /* TetrisTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1551,6 +1586,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD76CEA11C53049D0061D74B /* TetrisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD76CEA91C53049E0061D74B /* Build configuration list for PBXNativeTarget "TetrisTests" */;
+			buildPhases = (
+				AD76CE9E1C53049D0061D74B /* Sources */,
+				AD76CE9F1C53049D0061D74B /* Frameworks */,
+				AD76CEA01C53049D0061D74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD76CEA81C53049E0061D74B /* PBXTargetDependency */,
+			);
+			name = TetrisTests;
+			productName = TetrisTests;
+			productReference = AD76CEA21C53049D0061D74B /* TetrisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ADCEB56E1C4D1B2400FF9C3A /* Tetris */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADCEB8341C4D1B2700FF9C3A /* Build configuration list for PBXNativeTarget "Tetris" */;
@@ -1592,6 +1645,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Adam Sun";
 				TargetAttributes = {
+					AD76CEA11C53049D0061D74B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = ADCEB56E1C4D1B2400FF9C3A;
+					};
 					ADCEB56E1C4D1B2400FF9C3A = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -1614,11 +1671,19 @@
 			targets = (
 				ADCEB56E1C4D1B2400FF9C3A /* Tetris */,
 				ADCEB5721C4D1B2400FF9C3A /* ObjectiveChipmunk */,
+				AD76CEA11C53049D0061D74B /* TetrisTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD76CEA01C53049D0061D74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADCEB56D1C4D1B2400FF9C3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1653,6 +1718,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD76CE9E1C53049D0061D74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD76CEA51C53049E0061D74B /* TetrisTests.m in Sources */,
+				AD76CEAE1C53059E0061D74B /* LogicTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADCEB56B1C4D1B2400FF9C3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1842,7 +1916,96 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AD76CEA81C53049E0061D74B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADCEB56E1C4D1B2400FF9C3A /* Tetris */;
+			targetProxy = AD76CEA71C53049E0061D74B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AD76CEAA1C53049E0061D74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = TetrisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = H20.TetrisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tetris.app/Tetris";
+			};
+			name = Debug;
+		};
+		AD76CEAB1C53049E0061D74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = TetrisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = H20.TetrisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tetris.app/Tetris";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		ADCEB8321C4D1B2700FF9C3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1982,6 +2145,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD76CEA91C53049E0061D74B /* Build configuration list for PBXNativeTarget "TetrisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD76CEAA1C53049E0061D74B /* Debug */,
+				AD76CEAB1C53049E0061D74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		ADCEB56A1C4D1B2400FF9C3A /* Build configuration list for PBXProject "Tetris" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
